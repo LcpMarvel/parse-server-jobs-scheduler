@@ -17,13 +17,18 @@ export default class JobsScheduler {
       .then((jobSchedules) => {
         this.destroySchedules();
 
+        let recreatedJobs = 0;
+
         jobSchedules.forEach((jobSchedule) => {
           try {
             this.recreateJobSchedule(jobSchedule);
+            recreatedJobs += 1;
           } catch (error) {
             console.log(error);
           }
         });
+
+        console.log(`There are ${recreatedJobs} jobs recreated.`);
       });
   }
 

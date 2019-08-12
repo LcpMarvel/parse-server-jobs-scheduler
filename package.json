@@ -4,7 +4,7 @@
   "description": "Jobs scheduler for Parse Server",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/tsc"
+    "build": "rm -rf ./dist && ./node_modules/.bin/tsc"
   },
   "author": "lcpmarvel",
   "license": "ISC",
