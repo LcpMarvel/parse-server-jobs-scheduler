@@ -1,0 +1,26 @@
+{
+  "name": "parse-server-jobs-scheduler",
+  "version": "1.0.0",
+  "description": "Jobs scheduler for Parse Server",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc"
+  },
+  "author": "lcpmarvel",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cron": "^1.7.1",
+    "@types/moment": "^2.13.0",
+    "@types/parse": "^2.2.7",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cron": "^1.7.1",
+    "moment": "^2.24.0"
+  },
+  "peerDependencies": {
+    "parse": "^2.1.0"
+  }
+}
